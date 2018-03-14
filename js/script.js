@@ -1,0 +1,1 @@
+var bird = document.querySelector(".bird");

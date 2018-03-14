@@ -1,0 +1,85 @@
+body {
+    margin: 0;
+    height: 100vh;
+    overflow: hidden;
+}
+
+body {
+    background-image: url("https://opengameart.org/sites/default/files/2_21.png");
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-size: 1900px 700px;
+    animation: bg-slide 15s linear infinite;
+}
+
+.bird {
+    bottom: -300px;
+    margin: 0 auto;
+    position: relative;
+    background: url("../images/bird-sprite.png") 0 0 repeat-x;
+    z-index: 10;
+    height: 168px;
+    width: 183px;
+    background-size: 918px 506px;
+    animation: fly 3s steps(1) infinite;
+    /* animation: fly1 1s steps(5) 1, fly2 1s steps(5) 1s 1, fly3 1s steps(4) 2s 1 ; */
+    /* animation: name \ duration \ timing-function \ delay \ iteration-count \ direction \ fill-mode; */
+}
+
+@keyframes bg-slide {
+    from {
+        background-position: 0 0;
+    }
+    to {
+        background-position: -1900px 0;
+    }
+}
+
+@keyframes fly1 {
+    from {
+        background-position: 0 0;
+    }
+    to {
+        background-position: -918px 0;
+    }
+}
+
+@keyframes fly2 {
+    from {
+        background-position: 0px -168px;
+    }
+    to {
+        background-position: -918px -168px;
+    }
+}
+
+@keyframes fly3 {
+    from {
+        background-position: 0px -337px;
+    }
+    to {
+        background-position: -734px -337px;
+    }
+}
+
+@keyframes fly {
+    0% {
+        background-position: 0 0;
+    }
+    25% {
+        background-position: -918px 0;
+    }
+    25.00001% {
+        background-position: 0px -168px;
+    }
+    50% {
+        background-position: -918px -168px;
+    }
+    50.00001% {
+        background-position: 0px -337px;
+    }
+    100% {
+        background-position: -735px -337px;
+    }
+}

@@ -1,0 +1,15 @@
+{
+  "name": "loader-project",
+  "version": "1.0.0",
+  "description": "css animation project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "reload -b --port 8090"
+  },
+  "author": "Kevin Gonzalez",
+  "license": "ISC",
+  "devDependencies": {
+    "reload": "^2.2.2"
+  }
+}
